@@ -1,12 +1,22 @@
 window.onload = function(){
-	var aLi = document.getElementsByTagName('li');
-	for (var i = 0; i < aLi.length; i++) {
-		aLi[i].timer = null;
-		aLi[i].onmouseover=function(){
-			startMove(this,400);
+	var item = document.getElementsByName('item');
+	var son = document.getElementsByName('son');
+	for (var i = 0; i < item.length; i++) {
+		item[i].timer = null;
+		item[i].onmouseover=function(){
+			startMove(this,390);
 		};
-		aLi[i].onmouseout=function(){
+		item[i].onmouseout=function(){
 			startMove(this,140);
+		};
+	}
+	for (var j = 0; j < item.length; j++) {
+		son[j].timer = null;
+		son[j].onmouseover=function(){
+			startMove(this,440);
+		};
+		son[j].onmouseout=function(){
+			startMove(this,150);
 		};
 	}
 };
