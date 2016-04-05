@@ -1,0 +1,100 @@
+html,body,div{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.body{
+	width: 100%;
+	height: 100%;
+	background: url('imgs/zhuanti-2.png') no-repeat;
+	background-size: cover;	
+}
+.mask{
+	width:100%;
+	height: 100%;
+	background-color: black;
+	opacity: .5;
+	position: relative;
+	display: none;
+}
+.reback{
+	cursor: pointer;
+}
+.pop{
+	position: absolute;
+	width: 1318px;
+	height: 766px;
+	left: 50%;
+	top: 50%;
+	margin-left: -659px;
+	margin-top: -383px;
+}
+.pop-2{
+	position: absolute;
+	left: 1225px;
+}
+
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
